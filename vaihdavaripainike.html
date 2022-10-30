@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Vaihda väriä </title>
+</head>
+<body>
+<h1>Vaihda taustaväriä</h1>
+    
+    <p id="viesti"></p>
+    <button onclick="vaihdaSiniseksi();">Vaihda punaiseksi</button>
+    <br/> <br/> <button onclick="teeJotain();"> Yllätys</button>
+    <p id="viesti2"></p>
+    
+    <script>
+        
+        function vaihdaSiniseksi(){  
+        
+            document.body.style.backgroundColor="red"; 
+            document.getElementById("viesti").innerHTML="Huomasitko, että taustaväri on vaihdettu?";
+    
+     }
+            function teeJotain(){
+            
+    
+            document.body.style.backgroundColor="#ebff00";
+                document.getElementById("viesti2").innerHTML="keltainen";
+    
+    
+
+    
+     }
+    
+    
+    </script>
+
+</body>
+</html>

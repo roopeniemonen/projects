@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+
+    <link href="eurojackpot.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <h1>Lottonumerot</h1>
+
+
+    <label><br /></label>
+
+    <input type="button" value="Numerot" onclick="heitaNoppaa()">
+
+    <input type="button" value="Lisänumerot" onclick="heitaNoppaa2()">
+
+
+    <div id="heitot"></div>
+    <div id="heitot2"></div>
+
+
+    <script>
+        function heitaNoppaa() {
+
+            var luku = Math.floor(Math.random() * 40 + 1);
+
+
+
+            document.getElementById("heitot").innerHTML += " " + luku;
+
+
+
+
+        }
+
+        function heitaNoppaa2() {
+
+
+
+
+            var luku2 = Math.floor(Math.random() * 10 + 1);
+
+            document.getElementById("heitot2").innerHTML += " " + luku2;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

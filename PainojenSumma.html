@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Muuttujaesimerkki</title>
+</head>
+<body>
+<h1>Muuttujaesimerkki</h1> 
+<form>
+ <p><label>Hlön 1 paino: </label>
+<input type="text" id="hklo1paino"/> </p>   
+<p><label>Hlön 2 paino: </label> 
+<input type="text" id="hklo2paino"/> </p>
+<input type="button" value="Laske" onclick="laskePainojenSumma()"/>
+</form>    
+<p id="painojensummatulostus"></p>    
+<script>
+// sijoitetaan kahden henkilön painot ja lasketaan yhteispaino
+function laskePainojenSumma(){ 
+
+    // 1.Käyttäjän syötteet muuttujiin
+    // 2.Laskutoimitus
+    // 3.Laskutoimituksen tulostuken näyttäminen
+    var paino1 = Number(document.getElementById("hklo1paino").value);  //Value = syöttökenttään sijoitettava numero
+    var paino2 = Number(document.getElementById("hklo2paino").value);
+    var yhteispaino= paino1 + paino2;
+
+    document.getElementById("painojensummatulostus").innerHTML 
+    = "Painojen yhteissumma on" + yhteispaino + "kg";
+   
+}
+</script>    
+</body>
+</html>
